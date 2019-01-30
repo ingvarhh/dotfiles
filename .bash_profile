@@ -1,3 +1,5 @@
+set -o vi
+
 export PATH=$PATH:$HOME/bin
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="/usr/local/opt/php@5.6/bin:$PATH"
@@ -13,7 +15,10 @@ export FLASK_DEBUG=1
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias e=vim
+alias h=history
+alias e=nvim
+alias vi=nvim
+alias vim=nvim
 alias g=git
 alias ls='ls -G'
 alias ll='ls -lG'
@@ -29,3 +34,8 @@ mkcd() {
     mkdir -p "$*"
     cd "$*"
 }
+
+[[ -r /usr/local/etc/profile.d/bash_completion.sh ]] && source /usr/local/etc/profile.d/bash_completion.sh
+
+export FZF_DEFAULT_COMMAND='fd --type f'
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
