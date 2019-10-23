@@ -4,7 +4,7 @@ export PATH=$PATH:$HOME/bin
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="/usr/local/opt/php@5.6/bin:$PATH"
 
-export EDITOR=vim
+export EDITOR=nvim
 export PS1="\W \u: "
 
 export LANG=en_US.UTF-8
@@ -37,5 +37,4 @@ mkcd() {
 
 [[ -r /usr/local/etc/profile.d/bash_completion.sh ]] && source /usr/local/etc/profile.d/bash_completion.sh
 
-export FZF_DEFAULT_COMMAND='fd --type f'
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export PATH="$HOME/.cargo/bin:$PATH"
