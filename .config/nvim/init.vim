@@ -34,6 +34,7 @@ set ignorecase
 
 nnoremap <C-p> :Files<CR>
 nnoremap <C-l> :Buffers<CR>
+nnoremap <leader><leader> :noh<cr>
 
 function! SynStack()
   if !exists("*synstack")
