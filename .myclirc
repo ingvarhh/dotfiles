@@ -1,0 +1,3 @@
+[main]
+key_bindings = vi
+less_chatty = True

@@ -1,0 +1,13 @@
+[include]
+    path = ~/.gitconfig_local
+
+[alias]
+    l = log
+    s = status
+    d = diff
+    ds = diff --staged
+    a = add
+    co = checkout
+    c = commit
+    p = pull
+    ph = push origin HEAD
